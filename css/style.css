@@ -1479,6 +1479,7 @@ h6 { font-size: 16px; }
 	clear: both;
 	display: flex;
 	margin-bottom: 60px;
+	justify-content: space-around;
 }
 .foliox_tm_modalbox .main_details .textbox{
 	width: 70%;
@@ -2089,12 +2090,8 @@ input[type=number] {
 	background-color: #432d92;
 	display: flex;
 	align-items: center;
-	padding: 83px 90px 86px 90px;
+	padding: 70px 90px 70px 90px;
 	border-radius: 15px;
-}
-.foliox_tm_subscribe .left{
-	width: 50%;
-	padding-right: 40px;
 }
 .foliox_tm_subscribe .subtitle{
 	display: inline-block;
