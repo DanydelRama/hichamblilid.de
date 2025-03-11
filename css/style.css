@@ -2336,7 +2336,7 @@ input[type=number] {
 	.foliox_tm_hero .content{flex-direction: column-reverse;text-align: center;justify-content: center;}
 	.foliox_tm_hero .right{width: 100%;padding-left: 0px;margin-bottom: 30px;}
 	.foliox_tm_hero .right img{max-width: 200px;max-height: 200px;}
-	.foliox_tm_hero .left{width: 100%;margin-top: 800px;}
+	.foliox_tm_hero .left{width: 100%;margin-top: 500px;}
 	.foliox_tm_hero .name{font-size: 65px;margin-bottom: 12px;}
 	.foliox_tm_hero .job{font-size: 19px;margin-bottom: 35px;}
 	.foliox_tm_button a{padding: 13px 38px;}
