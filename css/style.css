@@ -697,6 +697,7 @@ h6 { font-size: 16px; }
 	top: 160px;
 	right: 100%;
 	margin-right: 45px;
+	z-index: 1;
 }
 .foliox_tm_about .badge .svg{
 	width: 65px;
@@ -818,6 +819,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
+	margin-top: 110px;
 }
 .foliox_tm_counter .counter_list ul{
 	margin: 0px 0px 0px -25px;
@@ -842,9 +844,10 @@ h6 { font-size: 16px; }
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 }
 .foliox_tm_counter .counter_list ul li h3{
-	font-size: 60px;
+	font-size: 45px;
 	color: var(--extra-color);
 }
 .foliox_tm_counter .counter_list ul li .title{
@@ -853,7 +856,9 @@ h6 { font-size: 16px; }
 	font-family: var(--font-family-extra);
 	font-weight: 500;
 	display: inline-block;
-	padding-left: 26px;
+	width: 150px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 /*---------------------------------------------------*/
@@ -1765,7 +1770,7 @@ h6 { font-size: 16px; }
 .foliox_tm_news .news_list ul li{
 	margin: 0px 0px 50px 0px;
 	padding-left: 25px;
-	width: 33.3333%;
+	width: 50%;
 }
 .foliox_tm_news .news_list ul li .list_inner{
 	width: 100%;
@@ -2299,8 +2304,8 @@ input[type=number] {
 	.foliox_tm_about .right{padding-left: 50px;top: 15px;}
 	.foliox_tm_about .right .item li{margin-bottom: 7px;}
 	.foliox_tm_about .right .title{margin-bottom: 20px;}
-	.foliox_tm_counter .counter_list ul li h3{font-size: 55px;}
-	.foliox_tm_counter .counter_list ul li .title{font-size: 16px;padding-left: 18px;line-height: 24px;}
+	.foliox_tm_counter .counter_list ul li h3{font-size: 38px;}
+	.foliox_tm_counter .counter_list ul li .title{font-size: 16px;line-height: 24px;}
 	.foliox_tm_counter .counter_list ul li .list_inner{padding: 50px 70px 40px 70px;}
 	.foliox_tm_services .list ul li .title{font-size: 21px;}
 	.foliox_tm_services .list ul li .icon{margin-bottom: 35px;}
@@ -2441,4 +2446,23 @@ input[type=number] {
 	width: 100%;
 	height: 100%;
 	border: none; /* Optional: remove iframe border */
+}
+
+/**/
+
+.flag {
+	width: 125px;
+    height: 100px;
+    background-color: aliceblue;
+    border-radius: 15%;
+    position: absolute;
+    margin-bottom: 280px;
+}
+
+@media (max-width: 1600px) {
+	.flag {
+		width: 100px;
+		height: 80px;
+		margin-bottom: 230px;
+	}
 }

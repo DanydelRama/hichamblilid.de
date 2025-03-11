@@ -404,6 +404,18 @@ function foliox_tm_popup(){
 	});
 }
 
+jQuery('.zertifikat_gallery').each(function() { 
+    jQuery(this).magnificPopup({
+        delegate: 'a.zoom', // the selector for the Zertifikat gallery items
+        type: 'image',
+        gallery: {
+            enabled: true
+        },
+        removalDelay: 300,
+        mainClass: 'mfp-fade'
+    });
+});
+
 // -----------------------------------------------------
 // ---------------   DATA IMAGES    --------------------
 // -----------------------------------------------------
@@ -598,3 +610,9 @@ jQuery('.tilt-effect').tilt({
 	speed: 500,
 	transition: true
 });
+
+
+// -----------------------------------------------------
+// -----------------    PROGRESS CYRCLE    -------------
+// -----------------------------------------------------
+
