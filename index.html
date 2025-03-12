@@ -1036,31 +1036,6 @@
 								</form>
 							</div>
 						</div>
-						<script>
-							document.getElementById("send_message").addEventListener("click", function () {
-								var name = document.getElementById("name").value;
-								var email = document.getElementById("email").value;
-								var phone = document.getElementById("phone").value;
-								var subject = document.getElementById("subject").value;
-								var message = document.getElementById("message").value;
-						
-								// AJAX request
-								var xhr = new XMLHttpRequest();
-								xhr.open("POST", "modal/contact.php", true);
-								xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-						
-								xhr.onload = function () {
-									if (xhr.status === 200) {
-										alert('Your message has been sent successfully!');
-										document.getElementById("contact_form").reset(); // Reset form
-									} else {
-										alert('There was an error sending your message. Please try again later.');
-									}
-								};
-						
-								xhr.send("ajax_name=" + encodeURIComponent(name) + "&ajax_email=" + encodeURIComponent(email) + "&ajax_phone=" + encodeURIComponent(phone) + "&ajax_subject=" + encodeURIComponent(subject) + "&ajax_message=" + encodeURIComponent(message));
-							});
-						</script>
 					</div>
 				</div>
 			</div>
