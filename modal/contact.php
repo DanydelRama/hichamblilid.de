@@ -6,9 +6,8 @@ $php_main_email = "contact@hichamblilid.de";
 // Fetching Values from AJAX request
 $php_name = $_POST['ajax_name'];
 $php_email = $_POST['ajax_email'];
-$php_phone = $_POST['ajax_phone'];
-$php_subject = $_POST['ajax_subject'];
 $php_message = $_POST['ajax_message'];
+$php_subject = $_POST['ajax_subject'];
 
 // Sanitizing email
 $php_email = filter_var($php_email, FILTER_SANITIZE_EMAIL);
@@ -28,7 +27,6 @@ if (filter_var($php_email, FILTER_VALIDATE_EMAIL)) {
         . 'Thank you for contacting us.<br/><br/>'
         . '<strong style="color:#f00a77;">Name:</strong> ' . $php_name . '<br/>'
         . '<strong style="color:#f00a77;">Email:</strong> ' . $php_email . '<br/>'
-        . '<strong style="color:#f00a77;">Phone:</strong> ' . $php_phone . '<br/>'
         . '<strong style="color:#f00a77;">Subject:</strong> ' . $php_subject . '<br/>'
         . '<strong style="color:#f00a77;">Message:</strong> ' . $php_message . '<br/><br/>'
         . 'This is a Contact Confirmation mail.<br/>'
@@ -38,9 +36,9 @@ if (filter_var($php_email, FILTER_VALIDATE_EMAIL)) {
     $send_message = wordwrap($email_template, 70);
     mail($php_main_email, $subject, $send_message, $headers);
 
-    echo "Message sent successfully.";
+    // Return success message
+    echo "";
 } else {
     echo "<span class='contact_error'>* Invalid email *</span>";
 }
-
 ?>
